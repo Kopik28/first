@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <style lang="css">
+        body {background-color:rgb(114, 111, 111);}
+        </style>
+    </head>
+<head>
+    <img src="" alt="">
+</head>
+    <head>
+    <script>
+        let selected = 'exemple'
+        let value = null
+        let value2 = null
+        function exemple(toto, tata) {
+            return `mes nombres sont ${toto} et ${tata}`
+        }
+
+        function addition(toto, tata) {
+            return toto + tata
+        }
+
+        function multiplication(toto, tata) {
+            return toto * tata
+        }
+
+        function soustraction(toto, tata) {
+            return toto - tata
+        }
+
+        function division(toto, tata) {
+            return toto / tata
+        }
+
+        function onChangeSelect(value) {
+            selected = value
+            showSelected(value)
+        }
+        function onChangeSelect(value2) {
+                selected = value2
+                showSelected(value2)
+            }
+
+
+        function showSelected(valeur) {
+            document.querySelector('.label').innerHTML = valeur
+        }
+
+        function saveInput1(valeur) {
+            value = valeur.target.valueAsNumber
+        }
+        function saveInput2(valeur) {
+            value2 = valeur.target.valueAsNumber
+        }
+
+        function showResult(valeur) {
+            document.querySelector('.result').innerHTML = valeur
+        }
+
+        function calc() {
+            if (selected === 'exemple') {
+                result = exemple(value, value2)
+            } else if (selected === 'addition')
+               { result = addition(value, value2)
+            } else if (selected === 'multiplication')
+                 { result = multiplication(value, value2)
+            } else if (selected === 'soustraction')
+                 { result = soustraction(value, value2)
+                }
+              else if (selected === 'division')
+                 { result = division(value, value2)
+                }  
+            else {
+                result = 'je n\'ai pas compris votre choix'
+            }
+            showResult(result)
+        }
+
+        function reset() {
+            selected = null
+            value = null
+            result = null
+            document.querySelector('.input1').value = null
+            document.querySelector('.input2').value = null
+            showSelected('')
+            showResult('')
+        }
+    </script>
+</head>
+<body>
+    <h1>
+        Calcules
+    </h1>
+    </br>
+    <p>
+        <h3>Choisir un mode de calcul</h3>
+    </p>
+    <select onChange="onChangeSelect(value)">
+        <option value="exemple">
+            monte les nombres
+        </option>
+        <option value="addition">
+            additionne nombre 1 et nombre 2
+        </option>
+        <option value="multiplication">
+            multiplie nombre 1 par nombre 2
+        </option>
+            <option value="soustraction">
+         soustrais nombre 1 par nombre 2
+        </option>
+        <option value="division">
+            divise nombre 1 par nombre 2
+        </option>
+    </select>
+
+    <p class="label"></p>
+
+    <p><h4>Ecrire vos nombres</h4></p>
+    <input class="input1" type="number" oninput="saveInput1(event)">
+    <br>
+    <input class="input2" type="number" oninput="saveInput2(event)">
+    <button onclick="calc()">
+        calculer
+    </button> 
+    <button onclick="reset()">
+        effacer
+    </button>
+    <p><strong>result</strong></p>
+    <div class="result"></div>
+</body>

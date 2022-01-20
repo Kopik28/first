@@ -1,0 +1,94 @@
+<head>
+<style lang="css">
+    
+
+    .mon-text {
+        color: red;
+        font-weight: bold;
+        
+    }
+</style>
+</head>
+<body>
+    <h1>Erwan LEMOINE</h1>
+    <head>
+    <script>
+        function clicked() {
+            const element = document.querySelector('.mon-text')
+            console.log(element)
+            element.style.color = 'chocolate'
+            element.textContent = 'Collège Jean Racine'
+            // window.alert('click on button')
+        }
+    </script>
+    <section class="ma-section">
+        <h3>Je suis né le 13 octobre 2007, j'habite au 51 rue de la halle</h3>
+        <br>
+        <span>à Villiers-le-Morhier et j'ai 2 chiens et 2 chats.</span>
+        <br>
+        <br>
+        J'aime:
+        <br>
+        <ul>
+            <li>Les animés</li>
+            <li>Les jeux vidéos</li>
+            <li>La plage</li>
+            <li>Le ski</li>
+            <li>Les animaux</li>
+            <li>Dormir</li>
+            <li>13</li>
+        </ul>
+        <button onclick="clicked()">
+            click
+        </button>
+        <p class="mon-text"> ETABLISSEMENT SCOLAIRE<br>(cliquez sur le bouton pour afficher)</p>
+        <ul>
+            <li>Calme</li>
+            <li>Intelligent</li>
+            <li>Bon en anglais</li>
+            <li>Persévérent</li>
+        </ul>
+    <select>
+     <option>A</option>
+     <option>B</option>
+     <option>C</option>
+     <option>D</option>
+     <option>E</option>
+     <option>F</option>
+     <option>G</option>
+     <option>H</option>
+     <option>I</option>
+     <option>J</option>
+     <option>K</option>
+     <option>L</option>
+     <option>M</option>
+     <option>N</option>
+     <option>O</option>
+     <option>P</option>
+     <option>Q</option>
+     <option>R</option>
+     <option>S</option>
+     <option>T</option>
+     <option>U</option>
+     <option>V</option>
+     <option>W</option>
+     <option>X</option>
+     <option>Y</option>
+     <option>Z</option>
+   <select></select>
+</section>
+    <p>Heure: <span id="Heure"></span></p>
+<script>
+    var dt = new Date();
+    function multi (nombre) {
+        return nombre * 2
+    }
+
+    function div (nombre, diviseur) {
+        const result = nombre / diviseur
+
+        return `la division de ${nombre} par ${diviseur} est égal à ${result}`
+    }
+    document.getElementById("Heure").innerHTML = div(5, 8);
+</script>
+</body>
