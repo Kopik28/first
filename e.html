@@ -1,0 +1,326 @@
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+<head>
+<title>Jeu de la Vie - Automate Cellulaire Paramétrable - Simulateur en Ligne</title>
+
+<meta property="og:title" content="Jeu de la Vie - Automate Cellulaire Paramétrable - Simulateur en Ligne" />
+<meta property="og:description" content="Outil pour simuler et personnaliser le jeu de la vie de Conway, un automate cellulaire : un ensemble de cellules sur une grille qui peut évoluer en fonction de règles basiques." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.dcode.fr/jeu-de-la-vie" />
+<meta property="og:image" content="https://www.dcode.fr/images/dcode.png" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="description" content="Outil pour simuler et personnaliser le jeu de la vie de Conway, un automate cellulaire : un ensemble de cellules sur une grille qui peut évoluer en fonction de règles basiques." />
+<meta name="keywords" content="jeu,vie,conway,game,life,evolution,automate,cellulaire,1970,canon,planeur,vaisseau,oscillateur,puffeur,jdlv" />
+
+<link rel="canonical" href="https://www.dcode.fr/jeu-de-la-vie" />
+<link rel="alternate" href="https://www.dcode.fr/game-of-life" hreflang="en" />
+
+<link href="https://www.dcode.fr/static/dcode3.91.css" rel="stylesheet" type="text/css" />
+
+<link rel="search" type="application/opensearchdescription+xml" title="dCode" href="opensearch.xml" />
+
+<link rel="icon" type="image/png" href="favicon.ico" />
+<link rel="apple-touch-icon-precomposed" href="favicon.ico" />
+<meta name="msapplication-TileColor" content="#f8efd3" />
+<meta name="msapplication-TileImage" content="favicon.ico" />
+<meta name="theme-color" content="#ECE2C3">
+
+
+
+</head>
+<body id="jeu-de-la-vie" lang="fr" data-title="Jeu de la vie" data-url="https://www.dcode.fr/jeu-de-la-vie">
+
+<!--body -->
+<div id="body">
+
+<!-- top -->
+<div id="top">
+
+<!-- left -->
+<div id="left">
+
+<!-- search -->
+<div class="heading_bar">Rechercher un outil</div>
+<form id="search" action="#">
+<label for="search_input">Recherche sur dCode par mots-clés :</label><br />
+<input type="text" id="search_input" placeholder="Tapez par exemple 'scrabble'" value="" /> <button>⏎</button><br />
+<label>Parcourir la <a href='liste-outils'>liste complète des outils</a></label><br />
+</form>
+<div id="search_results"></div>
+<!-- !search -->
+
+<!-- overview -->
+<div class="heading_bar" id="title_left">Jeu de la Vie en aucun cas volé ;)</div>
+<p id="overview">Outil pour simuler et personnaliser le jeu de la vie de Conway, un automate cellulaire : un ensemble de cellules sur une grille qui peut évoluer en fonction de règles basiques.</p>
+
+<!-- results -->
+<div class="heading_bar"><span id="results_title">Résultats</span><span id="results_icons"></span></div> 
+<div id="results" translate="no" class="notranslate"></div>
+<!-- !results -->
+
+<!-- float_left -->
+<div id="float_left">
+<div><div id='div-gpt-ad-1407836210568-0' style='min-width:336px;min-height:280px'></div></div>
+
+<!-- webap -->
+<div id="webap" itemscope itemtype="http://schema.org/WebApplication">
+<meta itemprop="browserRequirements" content="HTML5, Javascript" />
+<meta itemprop="inLanguage" content="fr" />
+<meta itemprop="url" content="https://www.dcode.fr/jeu-de-la-vie" />
+<meta itemprop="operatingSystem" content="all" />
+<p><span itemprop="name">Jeu de la Vie</span> - <span itemprop="author" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="https://www.dcode.fr/"><span itemprop="name">dCode</span></a></span></p>
+<p>Catégorie(s) : <span itemprop="applicationCategory">Fun/Divers, Biologie, Algorithme</span></p>
+</div>
+<!-- !webap -->
+
+<!-- share -->
+<div class="heading_bar">Partager</div>
+<div id="share">
+</div>
+<!-- !share -->
+
+<!-- contact -->
+<div class="heading_bar">dCode et plus</div>
+<p class="contact">dCode est gratuit et ses outils sont une aide précieuse dans les jeux, les maths, les énigmes, les géocaches, et les problèmes à résoudre au quotidien !<br/>Une suggestion ? un problème ? une idée ? <em>Ecrire à dCode</em> !</p>
+<div id="contact" title="dCode et plus">
+<form id="contact_form" action="#">
+<label>Besoin d'Aide ?</label><br/>
+<p>Rendez-vous sur notre communauté <a href='https://discord.gg/AT9V5Vq' target='_blank' rel='noopener'>Discord dCode</a> pour participer au forum d'entraide !<br> PS : Pour les messages codés, testez notre <a href='/identification-chiffrement'>détecteur de chiffrement</a> !<br/><br/></p>
+<label for="contact_message">Message a transmettre à dCodeur :</label><br/>
+<textarea id="contact_message" placeholder="Vous avez une question ? Un avis à donner ? Un problème (Les demandes d'aide sont ignorées) ? Une remarque sur cette page ou sur dCode en général ?
+NB : pour recevoir une réponse, indiquer une adresse email (non publiée)"></textarea>
+<p>Grâce à vos remarques, réponses et commentaires pertinents, dCode peut développer le meilleur outil 'Jeu de la Vie', alors écrivez-nous c'est gratuit ! Merci !</p>
+<button>Envoyer ce message</button>
+</form>
+</div>
+<!-- !contact -->
+
+</div>
+<!-- !float_left -->
+
+</div>
+<!-- !left -->
+
+</div>
+<!-- !top -->
+
+<!-- center -->
+<div id="center">
+
+<h1 id="title">Jeu de la Vie</h1>
+<div id="breadcrumps"><ol itemscope itemtype="http://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.dcode.fr/liste-outils#fun"><span itemprop="name">Fun/Divers</span></a><meta itemprop="position" content="1" /></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.dcode.fr/jeu-de-la-vie"><span itemprop="name">Jeu de la Vie</span></a><meta itemprop="position" content="2" /></li></ol></div>
+<!-- advert -->
+<div id='div-gpt-ad-1407836020760-0' style='min-width:320px;min-height:100px'></div>
+<!-- !advert -->
+<div id="forms">
+<h2 class="h2_form" id="f0">Simulateur du Jeu de la vie</h2>
+<form id="gameoflife" method="post">
+<label class="">Grille du Jeu de la Vie<script>
+ var GOL_LABEL_GENERATION = 'Génération :';
+ var GOL_LABEL_ALIVE_COUNT = 'Nombre de Cellules Vivantes :';
+ var GOL_LABEL_PATTERN = 'Remplir la grille';
+ var GOL_SELECT_PATTERN = 'Sélectionner un motif';
+ var GOL_SELECT_NOTHING = 'Rien (Grille vide)';
+ var GOL_SELECT_SAVED = 'Grille Sauvegardée (avec 💾)';
+ var GOL_SELECT_RANDOM = 'Aléatoire';
+ var GOL_SELECT_RANDOM2 = 'Aléatoire et Symétrique (Miroir)';
+ var GOL_SELECT_RANDOM4 = 'Aléatoire et Double Symétrique';
+ var GOL_SELECT_BLINKERS = 'Oscillateurs (Blinkers)';
+ var GOL_SELECT_GLIDER = 'Planneur (Glider)';
+ var GOL_SELECT_GLIDER_GUN = 'Canon à Planneurs (Glider Gun)';
+ var GOL_SELECT_SPACESHIPS = 'Vaisseaux (SpaceShip)';
+ var GOL_SELECT_GARDEN_OF_EDEN = 'Jardin d\'Eden (Garden of Eden)';
+ var GOL_SELECT_STABLES = 'Formes Inertes (Stables)';
+ var GOL_LABEL_RESIZE = 'Redimensionner la grille';
+ var GOL_BUTTON_RESIZE = 'OK';
+ var GOL_LABEL_EVOLUTION = 'Evolution';
+ var GOL_BUTTON_NEXT = '▶❙ Suivant';
+ var GOL_BUTTON_PLAY = '▶ Lecture';
+ var GOL_BUTTON_FAST = '⏩ Avance Rapide';
+ var GOL_BUTTON_FASTEST = '⚡ Vitesse Max';
+ var GOL_BUTTON_STOP = '❚❚ Pause';
+ var GOL_BUTTON_SAVE = '💾 Sauvegarder';
+ var GOL_LABEL_RULES = 'Règles appliquées :<br>Une cellule…';
+ var GOL_LABEL_RULES1 = '(Morte) prend Vie…';
+ var GOL_LABEL_RULES2 = '(Vivante) reste en Vie…';
+ var GOL_LABEL_RULES3 = '…si elle est entourée de N cellules en vie';
+ var GOL_LABEL_CONFIG = 'Configuration';
+ var GOL_BUTTON_CONFIG_DEFAULT = 'Par Défaut';
+ var GOL_BUTTON_CONFIG1 = 'Variante 1';
+ var GOL_BUTTON_CONFIG2 = 'Variante 2';
+ var GOL_BUTTON_CONFIG3 = 'Variante 3';
+ var GOL_CONFIRM_RULES = 'Le motif sélectionné est prévu pour fonctionner avec les règles classiques du jeu de la vie.';
+ var GOL_CONFIRM_RESIZE = 'Le motif sélectionné est prévu pour fonctionner avec une taille de grille minimale';
+ var GOL_CONFIRM_CHANGE = 'Voulez-vous changer maintenant ?'
+ </script></label><br />
+<div id="gameoflife_gameoflife" data-name="gameoflife">Chargement en cours...<br/><small>(si ce message ne disparait pas, actualiser la page)</small></div>
+<p class="info">Par défaut le jeu de la vie selon Conway suit les règles suivantes :
+ - Une cellule morte possédant exactement trois voisines vivantes devient vivante.
+ - Une cellule vivante possédant deux ou trois voisines vivantes reste vivante, sinon elle meurt.</p>
+<div class="cf "><span>Voir aussi :</span> <a href="/tirage-au-sort">Tirage au Sort</a> — <a href="/code-binaire">Code Binaire</a></div>
+</form>
+</div>
+<!-- advert -->
+<div id='div-gpt-ad-1407836075305-0' style='min-width:336px;min-height:280px'></div>
+<!-- !advert -->
+
+<!-- questions -->
+<h2>Réponses aux Questions (FAQ)</h2>
+<div id="questions">
+<div class="qa" data-edit="<strong>N'hésitez pas à modifier cette question-réponse pour la corriger ou l'améliorer</strong>" itemscope itemtype="http://schema.org/Question"><h3 id="q1" itemprop="name">Qu'est-ce que le Jeu de la Vie ? (Définition)</h3>
+<div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div itemprop="text"><p>Le <dfn>jeu de la vie</dfn> (<i>jdlv</i> ou <i>game of life</i>) est un <i>automate cellulaire</i> évoluant sur une grille (de taille théoriquement infinie) composée de cases carrées appelées <i>cellules</i> qui ont un état binaire (<samp>1</samp> pour <samp>vivante</samp> et <samp>0</samp> pour <samp>morte</samp>). Les cellules évoluent dans le temps en fonction de leur voisinage (chaque cellule a 8 cellules voisines)., ce qui modifie la grille à chaque étape d'évolution (appelée génération).</p></div></div></div>
+<div class="qa" data-edit="<strong>N'hésitez pas à modifier cette question-réponse pour la corriger ou l'améliorer</strong>" itemscope itemtype="http://schema.org/Question"><h3 id="q2" itemprop="name">Comment fonctionne le Jeu de la Vie ? (Règles)</h3>
+<div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div itemprop="text"><p>Par défaut, si une cellule vivante est trop isolée (0 ou 1 voisin) alors elle meurt à l'évolution suivante (mort par sous-population). Si elle est raisonnablement entourée (2 ou 3 voisins) alors elle reste en vie, mais et si elle est entourée de trop de cellules (4 voisins ou plus) elle meurt à la génération suivante (mort par sur-population).</p>
+<p>Une cellule peut aussi prendre vie, si une cellule morte est entourée de 3 cellules vivantes alors elle devient vivante (elle naît) à la prochaine évolution (naissance par reproduction).</p>
+<div class="warning"><p>Toutes les configurations sont possibles mais des règles/variations différentes peuvent entraîner une explosion de la population de cellules (par exemple en indiquant plusieurs conditions favorables aux naissances) ou un déclin rapide (par exemple en indiquant plusieurs conditions défavorables à la vie).</p></div></div></div></div>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-format="fluid" data-ad-layout="in-article" data-ad-client="ca-pub-2941823798983528" data-ad-slot="3211009949"></ins>
+<div class="qa" data-edit="<strong>N'hésitez pas à modifier cette question-réponse pour la corriger ou l'améliorer</strong>" itemscope itemtype="http://schema.org/Question"><h3 id="q3" itemprop="name">Pourquoi le Jeu de la Vie a-t-il été inventé ?</h3>
+<div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div itemprop="text"><p>Le <dfn>jeu de la vie</dfn> est une invention de John Horton Conway vers 1970. Conway, professeur de mathématiques, en réponse à un problème de John von Neumann qui recherchait une machine capable d'auto-réplication, construisit un modèle mathématique basé sur un algorithme avec des règles basiques qui allait devenir <i>Le <dfn>jeu de la vie</dfn></i>.</p>
+<p>Aujourd'hui les automates cellulaires comme le <dfn>jeu de la vie</dfn> sont utilisés dans des simulations informatiques comme par exemple l'évolution des populations dans un lieu donné ou l'évolution des cellules vivantes dans un organisme. Le simulateur de dCode ci dessus permet de tester différentes règles.</p></div></div></div>
+<div class="qa" data-edit="<strong>N'hésitez pas à modifier cette question-réponse pour la corriger ou l'améliorer</strong>" itemscope itemtype="http://schema.org/Question"><h3 id="q4" itemprop="name">Quels sont les motifs intéressant du jeu de la vie?</h3>
+<div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div itemprop="text"><p>Il existe des motifs stables (qui n'évoluent pas), des motifs périodiques (appelés <i>oscillateurs</i> ou <i>blinkers</i>) qui se répètent en boucle toutes les X générations.</p>
+<p>Le motif le plus connu est le <i>planeur</i> (glider), c'est un motif qui a la particularité de se décaler selon une diagonale en 4 générations.</p>
+<p>Les motifs <i>vaisseaux</i> se décalent horizontalement ou verticalement.</p>
+<p>Il existe également des motifs appelés <i>canons</i> ou <i>puffeur</i> ou <i>générateur</i> qui génèrent des planeurs ou des vaisseaux.</p>
+<div class="example"><p><u>Exemple :</u>  Voir l'ouvrage de référence pour les automates cellulaires : Cellular automata <a href="https://www.amazon.fr/gp/product/0262570866?tag=dcodefr-21" class="external" rel="noopener nofollow sponsored" target="_blank">ici (lien)</a> de Edgar F. Codd.</p></div></div></div></div>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-format="fluid" data-ad-layout="in-article" data-ad-client="ca-pub-2941823798983528" data-ad-slot="3211009949"></ins>
+<div class="qa" data-edit="<strong>N'hésitez pas à modifier cette question-réponse pour la corriger ou l'améliorer</strong>" itemscope itemtype="http://schema.org/Question"><h3 id="q5" itemprop="name">Qu'est-ce qu'un Jardin d'Eden ?</h3>
+<div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div itemprop="text"><p>Dans le <dfn>jeu de la vie</dfn>, un jardin d'Éden est une configuration telle qu'il n'existe pas de configuration précédente possible. Aucun motif ne peut générer comme génération suivante un jardin d'Éden.</p></div></div></div>
+<div class="qa" data-edit="<strong>N'hésitez pas à modifier cette question-réponse pour la corriger ou l'améliorer</strong>" itemscope itemtype="http://schema.org/Question"><h3 id="q6" itemprop="name">Comment revenir en arrière dans le jeu de la vie ?</h3>
+<div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div itemprop="text"><p>Il n'est pas possible de revenir en arrière, en effet, une infinité de <a href="https://www.dcode.fr/combinaisons">combinaisons</a> conduisent à une même position suivante.</p></div></div></div>
+<div class="qa" data-edit="<strong>N'hésitez pas à modifier cette question-réponse pour la corriger ou l'améliorer</strong>" itemscope itemtype="http://schema.org/Question"><h3 id="q7" itemprop="name">Qui a inventé le jeu de la vie ?</h3>
+<div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div itemprop="text"><p>Le <dfn>jeu de la vie</dfn> a été créé par John Horton Conway.</p></div></div></div>
+<button class="contact">Poser une nouvelle question</button>
+
+</div>
+<!-- !questions -->
+<!-- advert -->
+<ins class='adsbygoogle' style='display:block;min-width:336px;min-height:280px' data-ad-client='ca-pub-2941823798983528' data-ad-slot='9424003936' data-ad-format='rectangle'></ins>
+<!-- !advert -->
+<!-- source -->
+<h2>Code source</h2>
+<p class="info">dCode se réserve la propriété du code source pour "Jeu de la Vie". Sauf code licence open source explicite (indiqué Creative Commons / gratuit), l'algorithme pour "Jeu de la Vie", l'applet ou snippet (convertisseur, solveur, chiffrement / déchiffrement, encodage / décodage, encryptage / décryptage, traducteur) ou les fonctions liées à "Jeu de la Vie" (calculer, convertir, résoudre, décrypter / encrypter, déchiffrer / chiffrer, décoder / encoder, traduire) codés en langage informatique (Python, Java, C#, PHP, Javascript, Matlab, etc.) ou les données, en téléchargement, script, ou les accès API à "Jeu de la Vie" ne sont pas publics, idem pour un usage hors ligne, PC, tablette, appli iPhone ou Android !<br/>
+ Le copier-coller de la page "Jeu de la Vie" ou de ses résultats est autorisée tant que vous citez la source en ligne <i><nobr>https://www.dcode.fr/jeu-de-la-vie</nobr></i><br/>
+ Rappel : dCode est gratuit.
+ </p>
+<!-- !source -->
+
+<h2>Questions / Commentaires</h2>
+<div id="comments" class="contact">
+<button id="comments_button">Envoyer un message</button>
+<p class="info">Grâce à vos remarques, réponses et commentaires pertinents, dCode peut développer le meilleur outil 'Jeu de la Vie', alors écrivez-nous c'est gratuit ! Merci !</p>
+</div>
+
+</div>
+<!-- !center -->
+<!-- right -->
+<div id="right">
+<!-- summary -->
+<div id="lang_select"><a href="https://www.dcode.fr/game-of-life" hreflang="en"><img src="https://www.dcode.fr/images/flag-en.png" alt="Anglais (English)" title="Anglais (English)" width="40" height="25" loading="lazy"></a> </div>
+<div class="heading_bar">Menu</div>
+<div id="right_part_to_hide">
+<!-- !summary -->
+<!-- similar tools -->
+<div class="heading_bar">Pages similaires</div>
+<div id="similar_tools"><ul><li><a href="tirage-au-sort">Tirage au Sort</a></li><li><a href="code-binaire">Code Binaire</a></li><li><a href="generateur-labyrinthe">Générateur de Labyrinthe</a></li><li><a href="chiffre-aleatoire">Chiffres Aléatoires</a></li><li><a href="nombre-aleatoire">Nombres Aléatoires</a></li><li><a href="heterogramme">Heterogramme</a></li><li><a href="alphabets-caracteres-latins-etrangers">Caractères des Alphabets Etrangers</a></li><li><a href="liste-outils">LISTE DES OUTILS DCODE</a></li></ul></div>
+<!-- !similar tools -->
+
+
+<!-- support -->
+<div class="heading_bar">Faire un don</div>
+<div id="support"><ul><li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S53H3S52HJH6N&source=url" rel="noopener" target="_blank">Paypal</a></li><li><a href="https://www.amazon.fr/hz/wishlist/ls/P2FXD7O45J1K?tag=dcodefr-21" rel="noopener" target="_blank">Amazon</a></li><li><a href="javascript:;" rel="noopener" target="_blank">Autre</a></li></ul><span id="support_dialog">&nbsp;</span></div>
+<!-- !support -->
+<!-- livechat -->
+<div class="heading_bar">Forum/Aide</div>
+<!-- keywsords -->
+<div class="heading_bar">Mots-clés</div>
+<div id="keywords">jeu,vie,conway,game,life,evolution,automate,cellulaire,1970,canon,planeur,vaisseau,oscillateur,puffeur,jdlv</div>
+<!-- !keywords -->
+<!-- links -->
+<div class="heading_bar">Liens</div>
+<div id="links"><ul><li><a href="a-propos">Contact</a></li><li><a href="a-propos">A propos</a></li><li><a href="application-mobile">Application</a></li><li><a href="http://www.prise2tete.fr/" rel="noopener" target="_blank">Prise2Tete</a></li><li><a href="https://fr.wikipedia.org/" rel="noopener" target="_blank">Wikipedia</a></li></ul></div>
+<!-- !links -->
+</div>
+<!-- !right_menu_to_hide -->
+</div>
+<!-- fin droit -->
+<!-- bottom -->
+<br class="spacer" />
+<div id="bottom">
+<div id="source">Source : https://www.dcode.fr/jeu-de-la-vie</div>
+<div>&copy; 2022 <abbr title='DeCODE'>dCode</abbr> &mdash; La 'boite à outils' indispensable qui sait résoudre tous les jeux / énigmes / géocaches / CTF.</div>
+</div>
+<!-- !bottom -->
+</div>
+
+<div id="slideout" class="contact">Un problème ?</div>
+
+<a id="up-button">▲</a>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+<script>window.dCode={'tool':{'address':"jeu-de-la-vie",'title':"Jeu de la Vie",'url':"https://www.dcode.fr/jeu-de-la-vie"},'lang':"fr",'url':"https://www.dcode.fr"};</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://www.dcode.fr/static/jquery/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script>
+<script>window.jQuery.qtip || document.write('<script src="https://www.dcode.fr/static/jquery/qtip/jquery.qtip-3.0.3.min.js"><\/script>')</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script>window.jQuery.ui || document.write('<script src="https://www.dcode.fr/static/jquery/ui/jquery-ui-1.12.1.min.js"><\/script>')</script>
+<script src="https://www.dcode.fr/static/dcode3.92.js"></script>
+
+<script src="https://www.dcode.fr/static/dcode/gameoflife.js?_=1636713983"></script>
+<script>var gameoflife_gameoflife = Object.create(GAMEOFLIFE); gameoflife_gameoflife.init('gameoflife_gameoflife','gameoflife'); gameoflife_gameoflife.gameoflife();</script>
+
+<script type='text/javascript' async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML&locale=fr'></script>
+<script>if (!window.MathJax) { var script = document.createElement('script'); script.async = true; script.src = 'https://cdn.jsdelivr.net/npm/mathjax@2.7.7?config=TeX-MML-AM_CHTML&locale=fr'; document.head.appendChild(script); }</script>
+<script>if (!window.MathJax) { var script = document.createElement('script'); script.async = true; script.src = 'https://polyfill.io/v3/polyfill.min.js'; document.head.appendChild(script); script = document.createElement('script'); script.async = true; script.src = 'https://www.dcode.fr/static/mathjax/MathJax-2.7.7/unpacked/MathJax.js?config=TeX-MML-AM_CHTML&locale=fr'; document.head.appendChild(script); }</script>
+<script type='text/x-mathjax-config'>MathJax.Hub.Config({ 'HTML-CSS': { linebreaks: { automatic: true, width: 'container' } }, 'CommonHTML': { linebreaks: { automatic: true, width: 'container' } }, 'PreviewHTML': { linebreaks: { automatic: true, width: 'container' } }, 'SVG': { linebreaks: { automatic: true, width: 'container' } }, 'TeX': {MAXBUFFER: 20971520}, 'tex2jax': { inlineMath: [ ['$ ',' $'] ], displayMath: [ ['$$','$$'] ] }, menuSettings: { zoom: 'Click' } });
+MathJax.Hub.Register.MessageHook('Math Processing Error',function (message) { $('#'+message[1].MathJax.error.inputID+'-Frame').html(message[1].MathJax.error.originalText); });
+</script>
+
+<script async=true>!function(){var e=window.location.hostname,t=document.createElement('script'),a=document.getElementsByTagName('script')[0],n='https://quantcast.mgr.consensu.org'.concat('/choice/','ck5VYdjERExyk','/',e,'/choice.js'),i=0;t.async=!0,t.type='text/javascript',t.src=n,a.parentNode.insertBefore(t,a),function(){for(var e,t='__tcfapiLocator',a=[],n=window;n;){try{if(n.frames[t]){e=n;break}}catch(e){}if(n===window.top)break;n=n.parent}e||(function e(){var a=n.document,i=!!n.frames[t];if(!i)if(a.body){var o=a.createElement('iframe');o.style.cssText='display:none',o.name=t,a.body.appendChild(o)}else setTimeout(e,5);return!i}(),n.__tcfapi=function(){var e,t=arguments;if(!t.length)return a;if('setGdprApplies'===t[0])t.length>3&&2===t[2]&&'boolean'==typeof t[3]&&(e=t[3],'function'==typeof t[2]&&t[2]('set',!0));else if('ping'===t[0]){var n={gdprApplies:e,cmpLoaded:!1,cmpStatus:'stub'};'function'==typeof t[2]&&t[2](n)}else a.push(t)},n.addEventListener('message',function(e){var t='string'==typeof e.data,a={};try{a=t?JSON.parse(e.data):e.data}catch(e){}var n=a.__tcfapiCall;n&&window.__tcfapi(n.command,n.version,function(a,i){var o={__tcfapiReturn:{returnValue:a,success:i,callId:n.callId}};t&&(o=JSON.stringify(o)),e.source.postMessage(o,'*')},n.parameter)},!1))}();var o=function(){var e=arguments;typeof window.__uspapi!==o&&setTimeout(function(){void 0!==window.__uspapi&&window.__uspapi.apply(window.__uspapi,e)},500)};if(void 0===window.__uspapi){window.__uspapi=o;var s=setInterval(function(){i++,window.__uspapi===o&&i<3?console.warn('USP is not accessible'):clearInterval(s)},6e3)}}();</script><script>
+( function() {
+ var tick = 0;
+ var consentSetInterval = setInterval(function(){
+  if (++tick >= 200) { insertAds(); return; }
+  if (typeof window.__tcfapi === 'undefined') return;
+  window.__tcfapi('addEventListener', 2, function(tcData, listenerSuccess) {
+   if (!listenerSuccess) return;
+   if (tcData.eventStatus !== 'tcloaded' && tcData.eventStatus !== 'useractioncomplete') return;
+   if (!tcData.gdprApplies) insertAds();
+   else if ( (tcData.purpose.consents[1] || false) ) insertAds();
+  });
+ }, 100);
+ var insertAds = function() {
+  var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'; script.onerror=function(){window.dCode.adBlock=true;}; document.getElementsByTagName('head')[0].appendChild(script);
+  var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js'; script.onerror=function(){window.dCode.adBlock=true;}; document.getElementsByTagName('head')[0].appendChild(script);
+  clearInterval(consentSetInterval);
+ };
+})();
+
+</script>
+<script>$(function(){ $('.adsbygoogle').each(function () { (adsbygoogle = window.adsbygoogle || []).push({}); }); });</script><script async src='https://www.googletagmanager.com/gtag/js?id=UA-647045-2'></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-647045-2');</script><script>if (window.location.hostname != 'www.d'+'code.fr') window.location.href = window.location.href.replace(window.location.hostname, 'www.d'+'code.fr');</script>
+<script src='//cdn-a.yieldlove.com/yieldlove-bidder.js?dcode.fr'></script>
+ <script>var googletag = googletag || {}; googletag.cmd = googletag.cmd || []; googletag.cmd.push(function() { googletag.pubads().disableInitialLoad(); googletag.enableServices(); });</script>
+ <script type='text/javascript'>
+  googletag.cmd.push(function() {
+   googletag.defineSlot('/53015287,18673364/dcode.fr_d_336x280_1', [[336, 280], [300, 250]], 'div-gpt-ad-1407836075305-0').addService(googletag.pubads());
+   googletag.display('div-gpt-ad-1407836075305-0');
+  });
+  googletag.cmd.push(function() {
+   googletag.defineSlot('/53015287,18673364/dcode.fr_d_320x100_1', [320, 100], 'div-gpt-ad-1407836020760-0').addService(googletag.pubads());
+   googletag.display('div-gpt-ad-1407836020760-0');
+  });
+  googletag.cmd.push(function() {
+   googletag.defineSlot('/53015287,18673364/dcode.fr_d_336x280_2', [[336, 280], [300, 250]], 'div-gpt-ad-1407836210568-0').addService(googletag.pubads());
+   googletag.display('div-gpt-ad-1407836210568-0');
+  });
+  </script>
+
+<!-- !content -->
+</body>
+</html>
